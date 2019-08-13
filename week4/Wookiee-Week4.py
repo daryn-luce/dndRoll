@@ -5,22 +5,30 @@
 
 CalcFunctions = ["1. Addition", "2. Subtraction", "3. Multiplication", "4. Division"]
 CalcSymbols = ["+", "-", "*", "/"]
-n1 = input("Please enter your first Number")
 
-print("Please choose a function")
-print(*CalcFunctions, sep = "\n")
-Method = input()
+def ask1():
+    global n1
+    n1 = input("Please enter your first whole number")
+    if not n1.isdigit():
+        return ask1()
 
-if Method == "1":
-    print("Addition")
-elif Method == "2":
-    print("Subtraction")
-elif Method == "3":
-    print("Multiplication")
-else:
-    print("Division")
+def ask2():
+    global Method
+    print("Please choose a function by entering the corresponding number")
+    print(*CalcFunctions, sep = "\n")
+    Method = input()
+    if not Method.isdigit():
+        return ask2()
 
-n2 = input("Please enter your second Number")
+def ask3():
+    global n2
+    n2 = input("Please enter your first whole number")
+    if not n2.isdigit():
+        return ask3()
+
+ask1()
+ask2()
+ask3()
 
 if Method == "1":
     solve = int(n1) + int(n2)
