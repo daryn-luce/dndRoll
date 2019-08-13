@@ -22,7 +22,7 @@ def ask2():
 
 def ask3():
     global n2
-    n2 = input("Please enter your first whole number")
+    n2 = input("Please enter your second whole number")
     if not n2.isdigit():
         return ask3()
 
