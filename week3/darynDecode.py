@@ -14,7 +14,7 @@ def decode_char(char,key):
 
 def convert_message(message,key):
     message = message.split()
-    codeword = list()
+    codeword = []
     for word in message:
         currentword = ''
         for char in word:
@@ -24,7 +24,7 @@ def convert_message(message,key):
     
 def decode_message(message,key):
     message = message.split()
-    codeword = list()
+    codeword = []
     for word in message:
         currentword = ''
         for char in word:
@@ -33,11 +33,11 @@ def decode_message(message,key):
     return ' '.join(codeword)
     
     
-message = 'programming is fun i love you guys'
-key = 7
+message = 'I Love My Wife'.lower()
+key = 16
 
 coded_message = convert_message(message,key)
 print(coded_message, ':[coded message]')
 
-decoded_message = decode_message(coded_message,key)
-print(decoded_message, ':[decoded message]')
+# decoded_message = decode_message(coded_message,key)
+# print(decoded_message, ':[decoded message]')
