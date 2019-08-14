@@ -3,8 +3,10 @@
 #print("Hey " + Daryn + " I Love You!")
 #print(f'Hey {Daryn} {69 * 420}')
 
-CalcFunctions = ["1. Addition", "2. Subtraction", "3. Multiplication", "4. Division", "5. Squared", "6. Cubed"]
-CalcSymbols = ["+", "-", "*", "/", "²", "³"]
+import math
+
+CalcFunctions = ["1. Addition", "2. Subtraction", "3. Multiplication", "4. Division", "5. Squared", "6. Cubed", "7. Square Root"]
+CalcSymbols = ["+", "-", "*", "/", "²", "³", "√"]
 
 def ask1():
     global n1
@@ -41,6 +43,11 @@ if Method == "6":
     print("Your answer is:")
     print(solve)
     quit()
+if Method == "7":
+        print(n1, CalcSymbols[int(Method) - 1])
+        print("Your answer is:")
+        print(math.sqrt(int(n1)))
+        quit()
 
 ask3()
 
