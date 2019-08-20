@@ -9,5 +9,5 @@ def backwords(string):
             
         return ' '.join(newlist)
 
-print(backwords('This sentense is backwords /s'))
-print(backwords('The words of the sentense are backwords'))    
+print(backwords('This sentence is backwords /s'))
+print(backwords('The words of the sentence are backwords'))    
