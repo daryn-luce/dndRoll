@@ -1,11 +1,11 @@
 def backwords(string):
     if string[-3:] == ' /s':
-        return string[-4::-1]
+        return string[-3::-1]
     else:
         words = string.split()
         newlist = []
         for word in words:
-            newlist.append(word[-1::-1])
+            newlist.append(word[::-1])
             
         return ' '.join(newlist)
 
