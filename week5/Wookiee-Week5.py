@@ -12,9 +12,9 @@ print("Please enter a sentence")
 Text = input()
 
 Reverse = (Text[::-1])
-def ReverseWordText(Sentence):
+def ReverseWordText():
     return ' '.join(word[::-1] for word in Text.split(" "))
 
 print("Original String: " + Text)
 print("Reverse String: " + Reverse)
-print("Reverse Words String: " + ReverseWordText(Text))
+print("Reverse Words String: " + ReverseWordText())
